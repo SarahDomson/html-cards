@@ -13,9 +13,13 @@ body{
     transition: all 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
 }
 
+.card-shadow img {
+    transition: transform 0.3s;
+}
+
 .containerise{
     margin: auto;
-    width: 80%;
+    width: 85%;
     padding-bottom: 10%;
 }
 
@@ -31,9 +35,13 @@ body{
     justify-content: space-between;
 }
 
+.card-shadow:hover, .card-shadow:hover a{
+    color: #3f69ff;
+}
+
 .cards-container > div{
     width: 32%;
-    border-radius: 15px;
+    border-radius: 30px;
     background: white;
 }
 
@@ -41,28 +49,47 @@ body{
     width: 100%;
     height: 385px;
     object-fit: cover;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 
 .browse-posts{
     color: black;
     border: solid 1px #e2e3e9;
     border-radius: 30px;
-    /* padding: 15px; */
-    padding: 15px 30px;
-    /* padding-top: ;
-    padding-bottom: ;
-    padding-left: ;
-    padding-right: ; */
+    padding: 20px 35px;
     text-decoration: none;
+}
+
+.browse-posts:hover {
+    background-color: #e2e3e9;
+    transform: translateY(-5px) scale(1);
+}
+
+.card-shadow:hover{
+    transform: translateY(-5px) scale(1);
+}
+
+.card-shadow:hover img{
+    transform: scale(1.0);
 }
 
 .about-post{
     padding: 8%;
+    transition: transform 0.3s;
 }
 
 .about-post > h2{
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+.post > h1{
+    font-size: 2.3rem;
+}
+
+.post{
+    margin-bottom: 23px;
 }
 
 #profile-card-section img{
